@@ -86,6 +86,16 @@ def close_db(e=None):
 def init_app(app):
     app.teardown_appcontext(close_db)
     with app.app_context():
-        get_db().executescript(SCHEMA)
+        conn = get_db()
+        conn.executescript(SCHEMA)
+
+        # Admin role is controlled only by this project's configured ADMIN_EMAIL.
+        # Do not promote users based on a hardcoded email or shared credentials.
+        admin_email = (current_app.config.get("ADMIN_EMAIL") or "").strip().lower()
+        if admin_email:
+            conn.execute("UPDATE users SET role='member' WHERE role='admin' AND lower(email)<>?", (admin_email,))
+            conn.execute("UPDATE users SET role='admin' WHERE lower(email)=?", (admin_email,))
+            conn.commit()
+
         from .foods import seed_foods
         seed_foods()

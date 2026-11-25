@@ -79,7 +79,8 @@ def register():
         if d.get("consent") is not True:
             raise ApiError(422, "consent_required", "Please tick the box to let your trainer see your progress.", "consent")
         sub = find_linkable(code, request.remote_addr)
-    uid = run("INSERT INTO users(email,username,name,pw_hash) VALUES(?,?,?,?)", (email, username, name, generate_password_hash(pw)))
+    # Public registration must never choose or inherit an Admin role.
+    uid = run("INSERT INTO users(email,username,name,pw_hash,role) VALUES(?,?,?,?,'member')", (email, username, name, generate_password_hash(pw)))
     if sub:
         link(sub, uid)
     login_user(uid)
