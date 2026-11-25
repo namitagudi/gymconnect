@@ -264,6 +264,147 @@ html[data-theme="dark"] .tmp p{color:#cbd5e1}
 html[data-theme="dark"] .tmp a{color:#e9d5ff;background:#334155}
 html[data-theme="dark"] .mode{color:#f1f5f9}
 html[data-theme="dark"] .logo{-webkit-text-fill-color:transparent}
+
+/* FITCONNECT: dark-theme contrast fixes only. Light theme and theme toggle are unchanged. */
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #f8fafc;
+  --mu: #cbd5e1;
+  --ln: #475569;
+}
+html[data-theme="dark"] body,
+html[data-theme="dark"] .content {
+  color: #f1f5f9;
+}
+html[data-theme="dark"] main :is(p, span, label, small, li, dt, dd, legend, output, figcaption, caption, td, th, .sub, .note, .hint, .muted, .desc, .meta, .empty, .bl, .setrow) {
+  color: #e2e8f0 !important;
+}
+html[data-theme="dark"] main :is(h1, h2, h3, h4, h5, h6, b, strong, .title, .value) {
+  color: #f8fafc !important;
+}
+html[data-theme="dark"] main :is(a:not(.btn), .lk) {
+  color: #c4b5fd !important;
+}
+html[data-theme="dark"] .side,
+html[data-theme="dark"] .mtop,
+html[data-theme="dark"] .top {
+  color: #f1f5f9;
+}
+html[data-theme="dark"] .side .tab,
+html[data-theme="dark"] .mtop .mode,
+html[data-theme="dark"] .theme-picker {
+  color: #e2e8f0 !important;
+}
+html[data-theme="dark"] main :is(.card, .vc, .tile, .xc, .exb, .mdiag, .pop, .tmp, .tmp a, .chat .m, .emo button, .gl, .pill, .tag, .bd, .mc1, .mc2) {
+  color: #f1f5f9;
+}
+html[data-theme="dark"] main :is(.card, .vc, .xc, .exb, .mdiag, .chat .m, .emo button, .gl, .pill) {
+  border-color: #475569;
+}
+html[data-theme="dark"] main :is(.card, .vc, .tile, .xc, .exb, .mdiag, .chat .me2, .emo button, .gl) {
+  background: #1e293b !important;
+}
+html[data-theme="dark"] main :is(.tile, .tile span, .tile b) {
+  color: #f1f5f9 !important;
+}
+html[data-theme="dark"] main :is(input, select, textarea, option) {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+  border-color: #64748b !important;
+  caret-color: #f8fafc;
+}
+html[data-theme="dark"] main :is(input, textarea)::placeholder {
+  color: #94a3b8 !important;
+  opacity: 1;
+}
+html[data-theme="dark"] main select option {
+  background: #1e293b !important;
+  color: #f8fafc !important;
+}
+html[data-theme="dark"] main :is(button:not(.btn), .pill, .exb, .xc) {
+  color: #f1f5f9;
+}
+html[data-theme="dark"] main .btn,
+html[data-theme="dark"] main .btn :is(span, b, strong, small),
+html[data-theme="dark"] main .pill.on,
+html[data-theme="dark"] main .tab.on {
+  color: #fff !important;
+}
+html[data-theme="dark"] main .btn.alt {
+  background: #334155 !important;
+  color: #f8fafc !important;
+  border-color: #64748b !important;
+}
+html[data-theme="dark"] main :is(.ok, .wn, .ex2, .dm, .tag, .mc1, .mc2, .bd) {
+  filter: brightness(.88) saturate(1.08);
+}
+html[data-theme="dark"] main :is(.ok, .wn, .ex2, .dm, .tag, .mc1, .mc2, .bd) :is(span, b, small) {
+  color: inherit !important;
+}
+html[data-theme="dark"] main table :is(th, td) {
+  color: #e2e8f0 !important;
+  border-color: #475569 !important;
+}
+html[data-theme="dark"] main hr,
+html[data-theme="dark"] main .setrow,
+html[data-theme="dark"] main .pb {
+  border-color: #475569;
+}
+html[data-theme="dark"] main .pb { background: #334155; }
+html[data-theme="dark"] main .hero {
+  color: #f8fafc !important;
+  background: linear-gradient(120deg, #1e3a5f, #312e61 48%, #5b3152) !important;
+}
+html[data-theme="dark"] main .hero :is(*) {
+  color: #f8fafc !important;
+}
+html[data-theme="dark"] main .chat .mu2 {
+  background: #334155 !important;
+  color: #f8fafc !important;
+}
+html[data-theme="dark"] main .chat .me2 {
+  background: #263449 !important;
+  color: #f1f5f9 !important;
+}
+html[data-theme="dark"] main .tmp a {
+  background: #334155 !important;
+  color: #f1f5f9 !important;
+}
+html[data-theme="dark"] main .tmp a.em {
+  background: #4c2638 !important;
+  color: #ffe4e6 !important;
+}
+html[data-theme="dark"] main :is(.type, .legend, .vc small, .tmp p, .pop, .tmp) {
+  color: #cbd5e1 !important;
+}
+html[data-theme="dark"] main :is(.xc .xb, .vc .b, .vc .b *, .xc .xb *) {
+  color: #f1f5f9 !important;
+}
+html[data-theme="dark"] #toast,
+html[data-theme="dark"] .pop,
+html[data-theme="dark"] .tmp {
+  background: #1e293b !important;
+  color: #f1f5f9 !important;
+  border-color: #475569 !important;
+}
+html[data-theme="dark"] .pop :is(b, span),
+html[data-theme="dark"] .tmp :is(b, p, a) {
+  color: #f1f5f9 !important;
+}
+html[data-theme="dark"] .foot { color: #cbd5e1 !important; }
+html[data-theme="dark"] .ringx div { background: #1e293b !important; color: #f8fafc !important; }
+html[data-theme="dark"] .theme-picker button,
+html[data-theme="dark"] .menu {
+  background: #1e293b !important;
+  color: #f8fafc !important;
+  border-color: #475569 !important;
+}
+html[data-theme="dark"] :is(.tmb, .tmb *, .tmi) { color: #fbcfe8 !important; }
+html[data-theme="dark"] main :focus-visible {
+  outline: 2px solid #a5b4fc;
+  outline-offset: 2px;
+}
+
 </style></head><body>
 <div class="aurora" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
 <div class="shell"><aside class="side" id="side"><div class="sbrand"><span class="logo">Fit Connect</span></div><nav class="snav" id="tabs" aria-label="Main"></nav></aside><div class="content"><header class="mtop"><button class="menu" id="menu" aria-label="Open menu">&#9776;</button><span class="mode" id="mode">Member mode</span><span class="grow"></span><span class="theme-picker"><button type="button" id="themePicker" aria-label="Switch to dark theme" title="Switch theme">☾</button></span><div class="tm"><button class="tmb" id="tmb" aria-haspopup="true" aria-expanded="false" aria-label="Tele-MANAS helpline"><span class="tmi"></span><span class="tml">Tele-MANAS</span></button><div class="tmp" id="tmp" hidden role="dialog" aria-label="Tele-MANAS helpline"><b>Tele-MANAS helpline</b><p>Free mental-health support from the Government of India. Open 24×7 in many languages.</p><a href="tel:14416"><span>Call free, 24×7</span><b>14416</b></a><a href="tel:18008914416"><span>Toll-free</span><b>1800-891-4416</b></a><a href="tel:112" class="em"><span>Immediate danger</span><b>112</b></a></div></div><div class="acct"><button class="avb" id="avb" aria-haspopup="true" aria-expanded="false" aria-label="Account menu">AM</button><div class="pop" id="pop" hidden><b id="pn"></b><span id="pr"></span><hr><button class="so" id="so">Sign out</button></div></div></header><main id="main"></main><footer class="foot">Estimates only, not medical advice &middot; <label><input type="checkbox" id="rmx"> Reduce motion</label></footer></div></div>
