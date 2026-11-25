@@ -55,7 +55,6 @@ table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:9px 6px;b
 .tt{position:fixed;inset:0;z-index:60;pointer-events:none;display:none}.tt.go{display:block}.tt div{position:absolute;inset:0}.t1{clip-path:polygon(0 0,100% 0,0 100%);background:linear-gradient(135deg,#fdba74,#fda4af);animation:a1 1s cubic-bezier(.65,0,.35,1) forwards}.t2{clip-path:polygon(100% 0,100% 100%,0 100%);background:linear-gradient(135deg,#c4b5fd,#67e8f9);animation:a2 1s cubic-bezier(.65,0,.35,1) forwards}
 @keyframes a1{0%{transform:translate(-105%,-105%)}45%,55%{transform:translate(0,0)}100%{transform:translate(105%,105%)}}@keyframes a2{0%{transform:translate(105%,105%)}45%,55%{transform:translate(0,0)}100%{transform:translate(-105%,-105%)}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.tt{display:none!important}.caret{opacity:1}}html.rm *,html.rm *::before,html.rm *::after{animation:none!important;transition:none!important}html.rm .tt{display:none!important}html.rm .caret{opacity:1}
-/* ---------- Light blue aurora + gym backdrop (login screen only) ---------- */
 #aurora{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;display:block;
   background:linear-gradient(135deg,#f8fbff 0%,#f5f3ff 55%,#fff7f2 100%)}
 .orb{display:none}
@@ -69,7 +68,6 @@ body.is-auth #mute{display:none}
 @keyframes ab2{0%{transform:translate(0,0) scale(1)}50%{transform:translate(-16vmax,14vmax) scale(.9)}100%{transform:translate(-4vmax,26vmax) scale(1.12)}}
 @keyframes ab3{0%{transform:translate(0,0) scale(1)}50%{transform:translate(20vmax,-12vmax) scale(1.1)}100%{transform:translate(8vmax,-24vmax) scale(.92)}}
 @keyframes ab4{0%{transform:translate(0,0) scale(1)}50%{transform:translate(-18vmax,-8vmax) scale(1.12)}100%{transform:translate(-6vmax,-22vmax) scale(.95)}}
-/* login: everything soft blue */
 body.is-auth #aurora{background:linear-gradient(180deg,#f3f8ff,#e1efff 60%,#e4f4fd)}
 body.is-auth .ab{opacity:.65}
 body.is-auth .a1{background:#93c5fd}body.is-auth .a2{background:#7dd3fc}
@@ -77,8 +75,6 @@ body.is-auth .a3{background:#bfdbfe}body.is-auth .a4{background:#a5f3fc}
 .gymbg{display:none}
 body.is-auth .gymbg{display:block;position:absolute;inset:0;width:100%;height:100%}
 body.is-auth .authwrap{position:relative;z-index:1;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
-
-/* ---------- Glass login card ---------- */
 .authcard{width:min(430px,100%);background:#ffffffeb;-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);
   border:1px solid #fff;border-radius:24px;padding:30px 28px 26px;
   box-shadow:0 2px 6px #0f172a0d,0 28px 70px #2563eb30}
@@ -95,7 +91,6 @@ body.is-auth .authcard .sub{min-height:22px;margin:6px 0 14px;color:#475f86;font
   background:#e8f1ffcc;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid #fff;
   color:#1d4ed8;font-size:12.5px;font-weight:600;box-shadow:0 2px 8px #2563eb14}
 .fxpills svg{width:14px;height:14px;fill:none;stroke:#2563eb;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-
 .authcard .tabs2{background:#e8f1ff;padding:4px;border-radius:14px;gap:4px}
 .authcard .tabs2 button{background:transparent;color:#5b6f94;padding:10px;border-radius:11px}
 .authcard .tabs2 button.on{background:#fff;color:#1d4ed8;box-shadow:0 2px 10px #2563eb26}
@@ -111,8 +106,6 @@ body.is-auth .authcard .sub{min-height:22px;margin:6px 0 14px;color:#475f86;font
   background:linear-gradient(135deg,#3b82f6,#2563eb);box-shadow:0 8px 20px #2563eb40}
 .authcard .btn:hover{box-shadow:0 12px 28px #2563eb59}
 .authcard .btn.alt{background:#fff;color:#1d4ed8;border:1px solid #cfdcf1;box-shadow:none}
-
-/* ---------- Gym hero (left of the card) ---------- */
 body.is-auth .authwrap{gap:clamp(32px,6vw,90px);flex-wrap:nowrap}
 .fxhero{display:none;max-width:480px;color:#0f2a5c}
 .fxeyebrow{display:inline-block;padding:7px 14px;border-radius:99px;background:#ffffff99;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
@@ -130,8 +123,6 @@ body.is-auth .authwrap{gap:clamp(32px,6vw,90px);flex-wrap:nowrap}
 .authcard::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:linear-gradient(90deg,#60a5fa,#2563eb 60%,#38bdf8)}
 @media(min-width:901px){.fxhero{display:block}.fxpills{display:none}}
 @media(max-width:900px){body.is-auth .authwrap{flex-direction:column}}
-
-/* ---------- Colourful theme (login) ---------- */
 body.is-auth #aurora{background:linear-gradient(135deg,#e6f2ff 0%,#f3ebff 50%,#fff0ea 100%)}
 body.is-auth .ab{opacity:.62}
 body.is-auth .a1{background:#60a5fa}body.is-auth .a2{background:#c084fc}
@@ -157,8 +148,6 @@ body.is-auth .a3{background:#f9a8d4}body.is-auth .a4{background:#fdba74}
 .fxfeat svg{stroke:var(--c);box-sizing:content-box;padding:7px;border-radius:10px;background:var(--b);width:17px;height:17px;margin:-4px 0 -4px -6px}
 .fxfeat span{box-shadow:0 8px 20px color-mix(in srgb,var(--c) 22%,transparent)}
 .authcard .fxpills span{color:#6d28d9;background:#f5f3ffcc}
-
-
 .login{position:fixed;inset:0;z-index:70;overflow:auto;background:#eaf3ff}.login[hidden]{display:none}
 .tabs2{display:flex;gap:4px;margin:0 0 4px}.tabs2 button{flex:1;border:0;font:600 13px Inter,sans-serif;cursor:pointer}
 .err{color:#b91c1c;font-size:13px;min-height:18px;margin-top:6px}
@@ -171,7 +160,6 @@ body.is-auth .a3{background:#f9a8d4}body.is-auth .a4{background:#fdba74}
 .vsw button{padding:5px 13px;border-radius:99px;background:none;font:600 12px Inter,sans-serif;color:#475569}
 .vsw button.on{background:linear-gradient(135deg,#38bdf8,#6366f1 60%,#ec4899);color:#fff}
 .emo svg{display:block;margin:auto}
-/* dashboard shares the login palette */
 .aurora{background:#f6f9ff}.aurora i:nth-child(1){background:#bfdbfe}.aurora i:nth-child(2){background:#a5f3fc}.aurora i:nth-child(3){background:#ddd6fe}.aurora i:nth-child(4){background:#fbcfe8}
 .logo{background:linear-gradient(90deg,#2563eb,#7c3aed 55%,#ec4899);-webkit-background-clip:text;background-clip:text;color:transparent}
 .tab.on{background:linear-gradient(135deg,#dbeafe,#e0e7ff 50%,#fce7f3);color:#312e81}
@@ -200,8 +188,6 @@ body.is-auth .a3{background:#f9a8d4}body.is-auth .a4{background:#fdba74}
 .tmp{position:absolute;right:0;top:calc(100% + 10px);width:min(310px,calc(100vw - 90px));background:rgba(255,255,255,.97);backdrop-filter:blur(14px);border:1px solid #f3e8ff;border-radius:20px;box-shadow:0 18px 40px rgba(99,102,241,.2);padding:16px;z-index:60}
 .tmp>b{display:block;font-size:15px;color:#1e1b4b}.tmp p{font-size:13px;color:#64748b;margin:6px 0 12px}.tmp a{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 12px;margin-top:8px;border-radius:14px;background:linear-gradient(135deg,#f5f3ff,#e0f2fe);text-decoration:none;color:#3730a3;font-size:12px}.tmp a b{font-size:16px}.tmp a.em{background:linear-gradient(135deg,#ffe4e6,#fef3c7);color:#9f1239}
 @media(max-width:560px){.tml{display:none}.tmb{padding:0 8px}}
-
-/* Theme picker + optional dark theme. Light remains the default. */
 .theme-picker{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:var(--mu);white-space:nowrap}
 .theme-picker button{width:36px;height:36px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid #e0e7ff;background:#fff;color:#334155;font-size:17px;cursor:pointer}
 html[data-theme="dark"]{color-scheme:dark;--ink:#f1f5f9;--mu:#cbd5e1;--ln:rgba(71,85,105,.75)}
@@ -209,7 +195,6 @@ html[data-theme="dark"] body{background:#0f172a;color:#f1f5f9}
 html[data-theme="dark"] .aurora{background:#0f172a!important}
 html[data-theme="dark"] .aurora i{opacity:.16}
 html[data-theme="dark"] .side{background:linear-gradient(180deg,#172554,#1e1b4b 55%,#312044)!important;border-color:#334155}
-html[data-theme="dark"] .mtop,.top{ }
 html[data-theme="dark"] .mtop{background:rgba(15,23,42,.92)!important;border-color:#334155}
 html[data-theme="dark"] .card,html[data-theme="dark"] .vc{background:rgba(30,41,59,.94)!important;border-color:#475569;color:#f1f5f9}
 html[data-theme="dark"] .tile{border-color:#475569}
@@ -240,8 +225,6 @@ html[data-theme="dark"] .xc .xb,html[data-theme="dark"] .vc .b{color:#f1f5f9}
 html[data-theme="dark"] #toast{background:#1e293b;color:#f8fafc;border-color:#475569}
 html[data-theme="dark"] .lk{color:#c4b5fd}
 @media(max-width:560px){.theme-picker{gap:4px}.theme-picker button{width:34px;height:34px}}
-
-/* Dark-theme readability: keep every text surface legible. */
 html[data-theme="dark"] main,
 html[data-theme="dark"] main p,
 html[data-theme="dark"] main li,
@@ -281,14 +264,12 @@ html[data-theme="dark"] .tmp p{color:#cbd5e1}
 html[data-theme="dark"] .tmp a{color:#e9d5ff;background:#334155}
 html[data-theme="dark"] .mode{color:#f1f5f9}
 html[data-theme="dark"] .logo{-webkit-text-fill-color:transparent}
-
 </style></head><body>
 <div class="aurora" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
 <div class="shell"><aside class="side" id="side"><div class="sbrand"><span class="logo">Fit Connect</span></div><nav class="snav" id="tabs" aria-label="Main"></nav></aside><div class="content"><header class="mtop"><button class="menu" id="menu" aria-label="Open menu">&#9776;</button><span class="mode" id="mode">Member mode</span><span class="grow"></span><span class="theme-picker"><button type="button" id="themePicker" aria-label="Switch to dark theme" title="Switch theme">☾</button></span><div class="tm"><button class="tmb" id="tmb" aria-haspopup="true" aria-expanded="false" aria-label="Tele-MANAS helpline"><span class="tmi"></span><span class="tml">Tele-MANAS</span></button><div class="tmp" id="tmp" hidden role="dialog" aria-label="Tele-MANAS helpline"><b>Tele-MANAS helpline</b><p>Free mental-health support from the Government of India. Open 24×7 in many languages.</p><a href="tel:14416"><span>Call free, 24×7</span><b>14416</b></a><a href="tel:18008914416"><span>Toll-free</span><b>1800-891-4416</b></a><a href="tel:112" class="em"><span>Immediate danger</span><b>112</b></a></div></div><div class="acct"><button class="avb" id="avb" aria-haspopup="true" aria-expanded="false" aria-label="Account menu">AM</button><div class="pop" id="pop" hidden><b id="pn"></b><span id="pr"></span><hr><button class="so" id="so">Sign out</button></div></div></header><main id="main"></main><footer class="foot">Estimates only, not medical advice &middot; <label><input type="checkbox" id="rmx"> Reduce motion</label></footer></div></div>
 <div class="login" id="login" hidden><div id="aurora" aria-hidden="true"><i class="ab a1"></i><i class="ab a2"></i><i class="ab a3"></i><i class="ab a4"></i><i class="ab a5"></i></div><div class="authwrap" id="authwrap"></div></div>
 <div class="tt" id="tt" aria-hidden="true"><div class="t1"></div><div class="t2"></div></div><div id="toast" role="status"></div>
-<script>/* Fit Connect art kit: equipment illustrations and icons.
-   Pure inline SVG - no external images. Shared by the app and the UI preview. */
+<script>
 (function () {
   const NAVY = "#1e1b4b", ACC = "#f97316";
   const TINT = { orange: ["#ffedd5", "#fdba74"], cyan: ["#cffafe", "#67e8f9"], purple: ["#ede9fe", "#c4b5fd"], peach: ["#ffe8df", "#fdba9f"], lav: ["#f3e8ff", "#d8b4fe"] };
@@ -363,7 +344,7 @@ document.addEventListener("click",e=>{if(e.target&&e.target.id==="themePicker"){
 
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 let U=null,SUB=null,CSRF="",CUR="act",busy=false,tyT=0,TODAY=new Date().toLocaleDateString("en-CA");
-const S={lg:null,lgd:null,tedit:null,cam:null,pblob:null,ex:"squat",sets:[],pex:"",ppart:"Chest",thread:null,msgs:[],foodRes:null,meal:"Breakfast",mood:3,stress:2};
+const S={lg:null,lgd:null,tedit:null,cam:null,rec:null,rchunks:[],pmode:"photo",pblob:null,pkind:"image",pname:"capture.jpg",ex:"squat",sets:[],pex:"",ppart:"Chest",thread:null,msgs:[],foodRes:null,meal:"Breakfast",mood:3,stress:2};
 const ROLE=()=>U&&U.role==="admin"?"admin":"member";
 const USER=[["home","Dashboard","grid"],["act","Activity & BMI","steps"],["chk","Check-in","calendar"],["food","Diet","utensils"],["water","Water","drop"],["vid","Workout Videos","play"],["pos","Posture Check","target"],["log","Workout Logbook","book"],["exp","AI Coach","chat"],["team","Our Trainers","users"],["mem","Membership","ticket"],["prof","Profile","user"]];
 const ADMIN=[["adash","Dashboard","grid"],["users","Members","users"],["mems","Memberships","ticket"],["att","Attendance","calendar"],["mtrn","Manage Trainers","users"],["lib","Workout Videos","dumbbell"],["nut","Nutrition","utensils"],["ana","Analytics & Reports","chart"],["noti","Announcements","bell"],["set","Settings","gear"]];
@@ -387,11 +368,21 @@ const locked=e=>e&&e.code==="subscription_required"?pg("Members only",esc(e.mess
 const VIDEO_CATEGORIES = ["Chest", "Back", "Shoulders", "Biceps", "Triceps", "Legs", "Abs"];
 const V={};
 function stopCam(){
+  if(S.rec&&S.rec.state!=="inactive"){try{S.rec.stop()}catch(e){}}
+  S.rec=null;
   if(S.cam){S.cam.getTracks().forEach(t=>t.stop());S.cam=null;}
   const v=$("camv");
   if(v){v.pause();v.srcObject=null;}
 }
-function prev(blob){S.pblob=blob;$("pprev").innerHTML=`<div id="pwrap" style="position:relative;display:inline-block;max-width:100%;margin-top:12px"><img src="${URL.createObjectURL(blob)}" alt="Your photo" style="max-width:100%;max-height:320px;border-radius:14px;display:block"></div>`}
+function prev(blob,kind="image",name="capture.jpg"){
+  S.pblob=blob;S.pkind=kind;S.pname=name;
+  const url=URL.createObjectURL(blob);
+  if(kind==="video"){
+    $("pprev").innerHTML=`<div id="pwrap" style="position:relative;display:inline-block;max-width:100%;margin-top:12px"><video src="${url}" controls playsinline style="max-width:100%;max-height:320px;border-radius:14px;display:block;background:#000"></video></div>`;
+  }else{
+    $("pprev").innerHTML=`<div id="pwrap" style="position:relative;display:inline-block;max-width:100%;margin-top:12px"><img src="${url}" alt="Your photo" style="max-width:100%;max-height:320px;border-radius:14px;display:block"></div>`;
+  }
+}
 const POSTURE_EXERCISES={
   "Chest":["Bench Press","Incline Dumbbell Press","Chest Fly","Push-up","Cable Crossover","Pec Deck"],
   "Back":["Lat Pulldown","Seated Cable Row","Bent-over Row","Single-arm Dumbbell Row","Deadlift","Pull-up"],
@@ -407,7 +398,8 @@ V.pos=async()=>{
   if(!POSTURE_EXERCISES[S.ppart])S.ppart="Chest";
   const list=POSTURE_EXERCISES[S.ppart];
   if(!list.includes(S.pex))S.pex=list[0];
-  return pg("Posture Check","Choose a body part and exercise to get exercise-specific posture feedback.",`<div class="g2"><div class="card"><h3>1. Choose body part</h3><label class="f" for="post-part">Body part</label><select id="post-part">${parts.map(p=>`<option value="${esc(p)}" ${p===S.ppart?"selected":""}>${esc(p)}</option>`).join("")}</select><label class="f" for="post-exercise" style="margin-top:12px">2. Choose exercise</label><select id="post-exercise">${list.map(x=>`<option value="${esc(x.toLowerCase())}" ${x.toLowerCase()===S.pex.toLowerCase()?"selected":""}>${esc(x)}</option>`).join("")}</select><h3 style="margin-top:18px">3. Add a photo</h3><div class="rw"><label class="btn alt" style="cursor:pointer">Upload photo<input id="in-pimg" type="file" accept="image/jpeg,image/png" hidden></label><button class="btn alt" data-a="camon">Use camera</button></div><div id="camwrap" hidden style="margin-top:12px"><video id="camv" playsinline muted style="width:100%;max-height:320px;border-radius:14px;background:#000"></video><div class="rw" style="margin-top:8px"><button class="btn" data-a="snap">Take photo</button><button class="btn alt" data-a="camoff">Close camera</button></div></div><div id="pprev"></div><button class="btn" style="margin-top:14px" data-a="posture">Analyze posture</button><p class="note" style="margin-top:10px">Keep the joints used by the selected exercise visible in good light. A single photo gives a posture estimate only; it cannot track repetitions or the full movement. Your photo is not stored by this page. The camera needs HTTPS or localhost.</p></div><div class="card"><h3>AI Analysis Result</h3><div id="pres"><p class="note">Choose an exercise and capture your position to see the result.</p></div></div></div>`);
+  const isVid=S.pmode==="video";
+  return pg("Posture Check","Choose a body part and exercise, then upload or capture a photo or video.",`<div class="g2"><div class="card"><h3>1. Choose body part &amp; exercise</h3><label class="f" for="post-part">Body part</label><select id="post-part">${parts.map(p=>`<option value="${esc(p)}" ${p===S.ppart?"selected":""}>${esc(p)}</option>`).join("")}</select><label class="f" for="post-exercise" style="margin-top:12px">2. Exercise</label><select id="post-exercise">${list.map(x=>`<option value="${esc(x.toLowerCase())}" ${x.toLowerCase()===S.pex.toLowerCase()?"selected":""}>${esc(x)}</option>`).join("")}</select><label class="f" for="post-mode" style="margin-top:12px">3. Input type</label><select id="post-mode"><option value="photo" ${!isVid?"selected":""}>Photo (Upload or Camera)</option><option value="video" ${isVid?"selected":""}>Video (Upload or Record)</option></select><h3 style="margin-top:18px">4. Add ${isVid?"a video":"a photo"}</h3>${isVid?`<div class="rw"><label class="btn alt" style="cursor:pointer">Upload video<input id="in-pvid" type="file" accept="video/mp4,video/webm,video/quicktime" hidden></label><button class="btn alt" data-a="recstart" id="btn-recstart">Record video</button><button class="btn alt" data-a="recstop" id="btn-recstop" disabled>Stop recording</button></div>`:`<div class="rw"><label class="btn alt" style="cursor:pointer">Upload photo<input id="in-pimg" type="file" accept="image/jpeg,image/png" hidden></label><button class="btn alt" data-a="camon">Use camera</button></div>`}<div id="camwrap" hidden style="margin-top:12px"><video id="camv" playsinline muted style="width:100%;max-height:320px;border-radius:14px;background:#000"></video><div class="rw" style="margin-top:8px">${isVid?"":`<button class="btn" data-a="snap">Take photo</button>`}<button class="btn alt" data-a="camoff">Close camera</button></div></div><div id="pprev"></div><button class="btn" style="margin-top:14px" data-a="posture">Analyze posture</button><p class="note" style="margin-top:10px">Keep the joints used by the selected exercise visible in good light. Media is not stored by this page. Camera/recording needs HTTPS or localhost.</p></div><div class="card"><h3>AI Analysis Result</h3><div id="pres"><p class="note">Choose an exercise and upload or capture a photo/video to see the result.</p></div></div></div>`);
 };
 const perr=(h)=>h;
 V.food=async()=>{let f,fl;try{fl=await api("GET","/food-log")}catch(x){return locked(x)||pg("Food & Nutrition","",`<div class="card">${esc(x.message)}</div>`)}const t=fl.totals,r=S.foodRes;
@@ -457,7 +449,6 @@ return pg("Progress & Reports","Your trends over time.",`<div class="g">${tile("
 V.prof=async()=>{const u=U;
 return pg("My Profile",u.onboarded?"":"Set your goals to personalise your dashboard.",`<div class="g2"><div class="card"><h3>About you</h3><p class="note" style="margin-bottom:6px">Signed in as <b>@${esc(u.username||"")}</b></p><label class="f" for="pf-n">Name</label><input id="pf-n" type="text" value="${esc(u.name)}"><div class="row"><div><label class="f" for="pf-a">Age</label><input id="pf-a" type="number" value="${u.age||""}"></div><div><label class="f" for="pf-c">City</label><input id="pf-c" type="text" value="${esc(u.city||"")}"></div><div><label class="f" for="pf-h">Height (cm)</label><input id="pf-h" type="number" value="${u.height_cm||""}"></div><div><label class="f" for="pf-w">Weight (kg)</label><input id="pf-w" type="number" step="0.1" value="${u.weight_kg||""}"></div></div><label class="f" for="pf-ar">Area</label><input id="pf-ar" type="text" value="${esc(u.area||"")}"><button class="btn" style="margin-top:14px" data-a="saveprof">Save</button></div>
 <div class="card"><h3>Goals</h3><label class="f" for="gt">Goal</label><select id="gt">${[["lose_weight","Lose weight"],["maintain","Maintain"],["gain_muscle","Gain muscle"],["general_fitness","General fitness"]].map(g=>`<option value="${g[0]}" ${g[0]===(u.goal_type||"general_fitness")?"selected":""}>${g[1]}</option>`).join("")}</select><div class="row"><div><label class="f" for="gs">Daily steps</label><input id="gs" type="number" value="${u.step_goal}"></div><div><label class="f" for="gc">Calories (kcal)</label><input id="gc" type="number" value="${u.calorie_goal}"></div><div><label class="f" for="gw">Water (ml)</label><input id="gw" type="number" min="500" max="7000" step="250" value="${u.water_goal_ml}"></div><div><label class="f" for="gk">Workouts / week</label><input id="gk" type="number" value="${u.workouts_per_week}"></div></div><label class="f" for="gtw">Target weight (kg, optional)</label><input id="gtw" type="number" step="0.1" value="${u.target_weight_kg||""}"><button class="btn" style="margin-top:14px" data-a="savegoals">Save goals</button><h3 style="margin-top:18px;font-size:15px">Your data</h3><button class="btn alt" style="color:#be123c" data-a="delme">Delete my account</button></div></div><p class="note" style="text-align:center"><button class="so" data-a="signout">Sign out</button></p>`)};
-/* ---- admin ---- */
 V.adash=async()=>{const s=(await api("GET","/admin/stats")).stats;return pg("Dashboard","Subscriber counts exclude the demo membership.",`<div class="g">${tile("or","users","Active",s.active)}${tile("cy","clock","Expiring in 7 days",s.expiring)}${tile("pe","ticket","Expired",s.expired)}${tile("pu","chart","Total subscribers",s.total)}${tile("la","user","Linked to an account",s.linked)}${tile("or","calendar","Upcoming",s.upcoming)}</div>`)};
 V.users=async()=>{const m=(await api("GET","/admin/members")).members;return pg("Members","Only members who consented are shown. Wellness check-ins and AI chats stay private.",`<div class="card">${table(["Member","Area","Status","Steps","kcal","Water","Note"],m.map(x=>[esc(x.name),esc(x.area||""),stBadge(x.subscription.status),x.today.activity?fmt(x.today.activity.steps):"—",fmt(x.today.food.k),x.today.water_ml+" ml",`<button class="pill" data-a="note" data-i="${x.id}" data-n="${esc(x.note)}">${x.note?"Edit note":"Add note"}</button>`]))}</div>`)};
 V.mems=async()=>{const s=(await api("GET","/admin/subscriptions")).subscriptions;return pg("Memberships","Create codes, renew and extend subscriptions.",`<div class="card"><h3>New subscription</h3><div class="row"><div><label class="f" for="ns-n">Member name</label><input id="ns-n" type="text"></div><div><label class="f" for="ns-p">Plan</label><input id="ns-p" type="text" value="Monthly"></div><div><label class="f" for="ns-m">Months</label><input id="ns-m" type="number" value="1" min="1" max="24"></div><div><label class="f" for="ns-r">Price (₹)</label><input id="ns-r" type="number" value="999"></div></div><button class="btn" style="margin-top:12px" data-a="newsub">Create code</button></div><div class="card"><h3>All subscriptions</h3>${table(["Member","Status","Expiry","Code","Linked",""],s.map(x=>[esc(x.member_name),x.is_demo?'<span class="bd dm">DEMO</span>':stBadge(x.status),x.expiry_date,`<code>${esc(x.code)}</code>`,esc(x.linked_name||"—"),`<button class="pill" data-a="renew" data-i="${x.id}">Renew</button> <button class="pill" data-a="extend" data-i="${x.id}">+Days</button>${x.user_id?` <button class="pill" data-a="unlink" data-i="${x.id}">Unlink</button>`:""}`]))}</div>`)};
@@ -529,9 +520,25 @@ play(b){const v=(S.vids||[]).find(x=>x.id==b.dataset.i)||{};$("vp").innerHTML=`<
 goto(b){go(b.dataset.e)},
 async saveact(){const st=num("in-steps"),h=num("in-h"),w=num("in-w");if(st===undefined)return toast("Enter your steps first");if(h===undefined||w===undefined)return toast("Enter height and weight");await api("PUT","/activity/"+TODAY,{steps:st});U=(await api("PATCH","/me",{height_cm:h,weight_kg:w})).user;toast("Saved");calcLive()},
 pex(b){S.pex=b.dataset.e;render()},
-async posture(){const f=S.pblob;const exercise=val("post-exercise");if(!exercise)return toast("Choose an exercise first");S.pex=exercise;if(!f)return toast("Upload or take a photo first");const fd=new FormData();fd.append("exercise",exercise);fd.append("image",f,"photo.jpg");$("pres").innerHTML='<p class="note">AI is analyzing your posture…</p>';
-try{const r=await api("POST","/posture/analyze",undefined,fd);document.querySelectorAll("#pwrap .dot").forEach(x=>x.remove());const w=$("pwrap");if(w)(r.overlay&&r.overlay.points||[]).forEach(p=>w.insertAdjacentHTML("beforeend",`<i class="dot" style="left:${p.x*100}%;top:${p.y*100}%"></i>`));
-$("pres").innerHTML=`<div class="rw" style="margin-bottom:10px"><span class="tag">AI estimate</span><span class="tag">Confidence ${Math.round(r.confidence*100)}%</span></div>${r.message?`<p>${esc(r.message)}</p>`:""}${r.issues.map(i=>`<div class="setrow"><span><span class="bd ${i.severity==="ok"?"ok":"wn"}">${esc(i.title)}</span><br><span class="note">${esc(i.detail)}</span></span></div>`).join("")}${r.corrections.length?`<h3 style="margin-top:12px;font-size:15px">Try this</h3><ul style="padding-left:18px;font-size:14px">${r.corrections.map(c=>`<li>${esc(c)}</li>`).join("")}</ul>`:""}${r.observations.length?`<p class="note" style="margin-top:10px">${r.observations.map(esc).join(" · ")}</p>`:""}${(r.status!=="ok"||r.issues.some(i=>i.severity==="warn"))?`<div style="margin-top:16px;padding:14px;border-radius:16px;background:#eff6ff"><h3 style="font-size:15px;margin-bottom:6px">Need help with this exercise?</h3>${r.recommended_videos&&r.recommended_videos.length?r.recommended_videos.map(v=>`<button class="btn" style="margin:6px 6px 0 0" data-a="posturevideo" data-i="${v.id}">▶ Watch ${esc(v.title)}</button>`).join(""):`<p class="note">No matching exercise video has been uploaded yet. Check Workout Videos for available guides.</p><button class="btn alt" style="margin-top:8px" data-a="goto" data-e="vid">Open Workout Videos</button>`}</div>`:""}<p class="note" style="margin-top:10px">${esc(r.disclaimer)}</p>`}catch(e){$("pres").innerHTML=`<p style="color:#b91c1c">${esc(e.message)}</p>`}},
+async posture(){
+  const f=S.pblob,exercise=val("post-exercise"),part=val("post-part");
+  if(!exercise)return toast("Choose an exercise first");
+  S.pex=exercise;S.ppart=part;
+  if(!f)return toast(S.pmode==="video"?"Upload or record a video first":"Upload or take a photo first");
+  const isVid=S.pmode==="video"||S.pkind==="video";
+  const fd=new FormData();
+  fd.append("exercise",exercise);
+  fd.append("body_part",part);
+  fd.append(isVid?"video":"image",f,S.pname||(isVid?"clip.webm":"photo.jpg"));
+  $("pres").innerHTML=`<p class="note">AI is analyzing your ${isVid?"video":"posture"}…</p>`;
+  try{
+    const r=await api("POST",isVid?"/posture/analyze-video":"/posture/analyze",undefined,fd);
+    document.querySelectorAll("#pwrap .dot").forEach(x=>x.remove());
+    const w=$("pwrap");
+    if(!isVid&&w)(r.overlay&&r.overlay.points||[]).forEach(p=>w.insertAdjacentHTML("beforeend",`<i class="dot" style="left:${p.x*100}%;top:${p.y*100}%"></i>`));
+    $("pres").innerHTML=`<div class="rw" style="margin-bottom:10px"><span class="tag">${isVid?"Video estimate":"AI estimate"}</span><span class="tag">Confidence ${Math.round((r.confidence||0)*100)}%</span>${r.sampled_frames?`<span class="tag">${r.valid_frames||0}/${r.sampled_frames} frames</span>`:""}</div>${r.message?`<p>${esc(r.message)}</p>`:""}${(r.issues||[]).map(i=>`<div class="setrow"><span><span class="bd ${i.severity==="ok"?"ok":"wn"}">${esc(i.title)}</span><br><span class="note">${esc(i.detail)}</span></span></div>`).join("")}${(r.corrections||[]).length?`<h3 style="margin-top:12px;font-size:15px">Try this</h3><ul style="padding-left:18px;font-size:14px">${r.corrections.map(c=>`<li>${esc(c)}</li>`).join("")}</ul>`:""}${(r.observations||[]).length?`<p class="note" style="margin-top:10px">${r.observations.map(esc).join(" · ")}</p>`:""}${(r.status!=="ok"||(r.issues||[]).some(i=>i.severity==="warn"))?`<div style="margin-top:16px;padding:14px;border-radius:16px;background:#eff6ff"><h3 style="font-size:15px;margin-bottom:6px">Need help with this exercise?</h3>${r.recommended_videos&&r.recommended_videos.length?r.recommended_videos.map(v=>`<button class="btn" style="margin:6px 6px 0 0" data-a="posturevideo" data-i="${v.id}">▶ Watch ${esc(v.title)}</button>`).join(""):`<p class="note">No matching exercise video has been uploaded yet. Check Workout Videos for available guides.</p><button class="btn alt" style="margin-top:8px" data-a="goto" data-e="vid">Open Workout Videos</button>`}</div>`:""}<p class="note" style="margin-top:10px">${esc(r.disclaimer||"")}</p>`;
+  }catch(e){$("pres").innerHTML=`<p style="color:#b91c1c">${esc(e.message)}</p>`}
+},
 async camon(){
   try{
     if(!window.isSecureContext){throw new Error("Camera access needs HTTPS or localhost. Open the site using http://localhost or https://.")}
@@ -541,24 +548,47 @@ async camon(){
     wrap.hidden=false;
     let stream;
     try{
-      // Prefer the rear camera on phones, but allow the browser to choose any camera on desktops.
       stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:"environment"},width:{ideal:1280},height:{ideal:720}},audio:false});
     }catch(firstError){
-      // Fallback for laptops and devices that do not expose an environment-facing camera.
       stream=await navigator.mediaDevices.getUserMedia({video:true,audio:false});
     }
     S.cam=stream;
     v.muted=true;v.autoplay=true;v.playsInline=true;v.srcObject=stream;
     await v.play();
-    toast("Camera is ready. Position your full body in the frame.");
+    toast("Camera is ready. Position your body in the frame.");
+    return stream;
   }catch(e){
     stopCam();
     const msg=e.name==="NotAllowedError"||e.name==="PermissionDeniedError"?"Camera permission is blocked. In Chrome, click the icon beside the address bar → Site settings → Camera → Allow, then reload.":e.name==="NotFoundError"?"No camera was found. Connect a webcam or use Upload photo.":e.name==="NotReadableError"?"The camera is being used by another app. Close other camera apps or tabs and try again.":e.name==="OverconstrainedError"?"The selected camera is not available. Try another camera or Upload photo.":e.message||"Camera could not be opened. Try Upload photo instead.";
     toast(msg);
+    throw e;
   }
 },
-snap(){const v=$("camv");if(!v.videoWidth)return toast("Camera isn't ready yet");const c=document.createElement("canvas");c.width=v.videoWidth;c.height=v.videoHeight;c.getContext("2d").drawImage(v,0,0);c.toBlob(b=>{prev(b);stopCam();$("camwrap").hidden=true},"image/jpeg",.9)},
+snap(){const v=$("camv");if(!v.videoWidth)return toast("Camera isn't ready yet");const c=document.createElement("canvas");c.width=v.videoWidth;c.height=v.videoHeight;c.getContext("2d").drawImage(v,0,0);c.toBlob(b=>{prev(b,"image","camera-photo.jpg");stopCam();$("camwrap").hidden=true},"image/jpeg",.9)},
 camoff(){stopCam();$("camwrap").hidden=true},
+async recstart(){
+  if(typeof MediaRecorder==="undefined")return toast("Video recording is not supported in this browser. Upload a video instead.");
+  const stream=await ACT.camon();
+  S.rchunks=[];
+  const mimeType=MediaRecorder.isTypeSupported("video/webm;codecs=vp8")?"video/webm;codecs=vp8":MediaRecorder.isTypeSupported("video/webm")?"video/webm":"";
+  const rec=mimeType?new MediaRecorder(stream,{mimeType}):new MediaRecorder(stream);
+  rec.ondataavailable=e=>{if(e.data&&e.data.size>0)S.rchunks.push(e.data)};
+  rec.onstop=()=>{
+    const blob=new Blob(S.rchunks,{type:rec.mimeType||"video/webm"});
+    prev(blob,"video","recorded-clip.webm");
+    if(S.cam){S.cam.getTracks().forEach(t=>t.stop());S.cam=null;}
+    if($("camwrap"))$("camwrap").hidden=true;
+    if($("btn-recstart"))$("btn-recstart").disabled=false;
+    if($("btn-recstop"))$("btn-recstop").disabled=true;
+    toast("Video recorded.");
+  };
+  S.rec=rec;
+  rec.start();
+  if($("btn-recstart"))$("btn-recstart").disabled=true;
+  if($("btn-recstop"))$("btn-recstop").disabled=false;
+  toast("Recording video…");
+},
+recstop(){if(S.rec&&S.rec.state!=="inactive")S.rec.stop()},
 async fsearch(){const r=await api("GET","/foods?q="+encodeURIComponent(val("in-food")));S.meal=$("in-meal").value;$("fres").innerHTML=r.foods.slice(0,8).map(f=>`<div class="setrow"><span>${esc(f.name)} <span class="note">${f.kcal} kcal/100 g</span></span><span class="rw"><input type="number" id="fg${f.id}" value="${f.serving_g||100}" min="1" style="width:76px"> g<button class="pill" data-a="addfood" data-i="${f.id}">Add</button></span></div>`).join("")||'<p class="note">No match. Try another word.</p>'},
 async addfood(b){S.meal=$("in-meal").value;await api("POST","/food-log",{meal:S.meal,items:[{food_id:+b.dataset.i,grams:+$("fg"+b.dataset.i).value}]});toast("Added to "+S.meal);render()},
 async fphoto(){const f=$("in-photo").files[0];if(!f)return toast("Choose a meal photo first");S.meal=$("in-meal").value;const fd=new FormData();fd.append("image",f);toast("Reading photo…");S.foodRes=await api("POST","/diet/analyze-photo",undefined,fd);render()},
@@ -632,7 +662,15 @@ $("main").addEventListener("click",async e=>{const b=e.target.closest("[data-a]"
 $("tabs").addEventListener("click",e=>{const b=e.target.closest("[data-t]");if(b){$("side").classList.remove("open");go(b.dataset.t)}});
 $("menu").onclick=e=>{e.stopPropagation();$("side").classList.toggle("open")};document.addEventListener("click",e=>{if(!e.target.closest("#side"))$("side").classList.remove("open")});
 $("main").addEventListener("keydown",e=>{if(e.target.id==="in-chat"&&e.key==="Enter"&&!e.shiftKey){e.preventDefault();ACT.chat()}});
-$("main").addEventListener("change",e=>{if(e.target.id==="in-pimg"&&e.target.files[0])prev(e.target.files[0]);if(e.target.id==="post-part"){S.ppart=e.target.value;const sel=$("post-exercise");sel.innerHTML=POSTURE_EXERCISES[S.ppart].map(x=>`<option value="${esc(x.toLowerCase())}">${esc(x)}</option>`).join("");S.pex=sel.value;$("pres").innerHTML='<p class="note">Choose an exercise and capture your position to see the result.</p>'}if(e.target.id==="post-exercise")S.pex=e.target.value;if(e.target.id==="up-c")fillTl();if(e.target.id==="lg-hf"){S.lg.hf=e.target.value;render()}});
+$("main").addEventListener("change",e=>{
+  if(e.target.id==="in-pimg"&&e.target.files[0]){const f=e.target.files[0];prev(f,"image",f.name||"photo.jpg")}
+  if(e.target.id==="in-pvid"&&e.target.files[0]){const f=e.target.files[0];prev(f,"video",f.name||"video.mp4")}
+  if(e.target.id==="post-mode"){S.pmode=e.target.value;S.pblob=null;render()}
+  if(e.target.id==="post-part"){S.ppart=e.target.value;const sel=$("post-exercise");sel.innerHTML=POSTURE_EXERCISES[S.ppart].map(x=>`<option value="${esc(x.toLowerCase())}">${esc(x)}</option>`).join("");S.pex=sel.value;$("pres").innerHTML='<p class="note">Choose an exercise and upload or capture a photo/video to see the result.</p>'}
+  if(e.target.id==="post-exercise")S.pex=e.target.value;
+  if(e.target.id==="up-c")fillTl();
+  if(e.target.id==="lg-hf"){S.lg.hf=e.target.value;render()}
+});
 $("main").addEventListener("input",e=>{const t=e.target;if(t.dataset.live)calcLive();if(S.lg&&t.dataset.lg){const[k,i]=t.dataset.lg.split(":");S.lg.rows[+i][k]=+t.value;lgInfo()}if(S.lg&&t.dataset.lgf)S.lg[t.dataset.lgf]=t.value});
 $("avb").onclick=e=>{e.stopPropagation();const p=$("pop"),o=p.hidden;p.hidden=!o;$("avb").setAttribute("aria-expanded",o)};document.addEventListener("click",()=>{$("pop").hidden=true;$("avb").setAttribute("aria-expanded","false")});$("pop").onclick=e=>e.stopPropagation();document.addEventListener("keydown",e=>{if(e.key==="Escape")$("pop").hidden=true});
 $("tmb").insertAdjacentHTML("afterbegin","");document.querySelector(".tmi").innerHTML=I.heart;
@@ -645,49 +683,12 @@ $("rmx").onchange=e=>{document.documentElement.classList.toggle("rm",e.target.ch
 async function brand(){try{$("main").ownerDocument.querySelector(".logo").textContent=(await api("GET","/settings")).gym_name}catch(e){}}
 async function refresh(){const m=await api("GET","/me");U=m.user;SUB=m.subscription;CSRF=m.csrf||CSRF}
 function enter(m){U=m.user;SUB=m.subscription;CSRF=m.csrf;document.body.classList.remove("is-auth");$("login").hidden=true;CUR=MODE()[0][0];if(ROLE()==="member"&&!U.onboarded)CUR="prof";brand();render()}
-/* ---- login screen (design kept from the preview) ---- */
-var MARK =
-    '<svg viewBox="0 0 48 48" aria-hidden="true">' +
-    '<rect x="2" y="18" width="5" height="12" rx="2"/><rect x="8" y="12" width="6" height="24" rx="2.5"/>' +
-    '<rect x="34" y="12" width="6" height="24" rx="2.5"/><rect x="41" y="18" width="5" height="12" rx="2"/>' +
-    '<rect x="14" y="22" width="20" height="4" rx="2"/></svg>';
-var PILLS =
-    '<span><svg viewBox="0 0 24 24"><path d="M6 7v10M18 7v10M3 10v4M21 10v4M6 12h12"/></svg>Workouts</span>' +
-    '<span><svg viewBox="0 0 24 24"><path d="M12 3c1 4 5 6 5 11a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-4-1-6 1-10z"/></svg>Nutrition</span>' +
-    '<span><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-9"/></svg>Progress</span>';
-var GYM =
-    '<svg class="gymbg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs>' +
-    '<linearGradient id="gm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#a5b4fc"/></linearGradient>' +
-    '<linearGradient id="gB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bae6fd"/><stop offset="1" stop-color="#3b82f6"/></linearGradient>' +
-    '<linearGradient id="gR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fecdd3"/><stop offset="1" stop-color="#f43f5e"/></linearGradient>' +
-    '<linearGradient id="gY" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fef08a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>' +
-    '<linearGradient id="gG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bbf7d0"/><stop offset="1" stop-color="#22c55e"/></linearGradient>' +
-    '<linearGradient id="gP" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9d5ff"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient>' +
-    '<linearGradient id="gf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#c7d2fe" stop-opacity=".85"/></linearGradient>' +
-    '<linearGradient id="gs" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".6"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>' +
-    '<g fill="url(#gs)"><path d="M-100 120L400 0h120L20 240z"/><path d="M200 420L760 220h110L330 520z"/><path d="M700 800L1100 560h120L820 860z"/></g>' +
-    '<g opacity=".55"><circle cx="560" cy="120" r="46" fill="#fda4af"/><circle cx="640" cy="60" r="22" fill="#fde68a"/><circle cx="470" cy="210" r="18" fill="#86efac"/><circle cx="760" cy="150" r="30" fill="#c4b5fd"/><circle cx="380" cy="80" r="26" fill="#7dd3fc"/><circle cx="1130" cy="420" r="34" fill="#fdba74"/><circle cx="90" cy="460" r="30" fill="#f9a8d4"/></g>' +
-    '<rect y="600" width="1200" height="200" fill="url(#gf)"/><path d="M0 668h1200" stroke="#fff" stroke-width="3" opacity=".85"/>' +
-    '<g stroke="#fff" stroke-width="3"><g fill="url(#gm)"><rect x="840" y="130" width="22" height="540" rx="6"/><rect x="1060" y="130" width="22" height="540" rx="6"/><rect x="830" y="120" width="262" height="22" rx="8"/><rect x="862" y="300" width="36" height="12" rx="5"/><rect x="1024" y="300" width="36" height="12" rx="5"/><rect x="862" y="470" width="36" height="12" rx="5"/><rect x="1024" y="470" width="36" height="12" rx="5"/><rect x="760" y="287" width="440" height="12" rx="6"/></g>' +
-    '<rect x="778" y="240" width="20" height="106" rx="8" fill="url(#gR)"/><rect x="802" y="256" width="16" height="74" rx="6" fill="url(#gY)"/><rect x="1162" y="240" width="20" height="106" rx="8" fill="url(#gB)"/><rect x="1142" y="256" width="16" height="74" rx="6" fill="url(#gG)"/></g>' +
-    '<g transform="translate(60 180) rotate(-16)" stroke="#fff" stroke-width="3"><rect y="24" width="280" height="14" rx="7" fill="url(#gm)"/><rect x="-8" y="-12" width="40" height="84" rx="12" fill="url(#gP)"/><rect x="248" y="-12" width="40" height="84" rx="12" fill="url(#gP)"/><rect x="30" y="-28" width="26" height="116" rx="9" fill="url(#gB)"/><rect x="224" y="-28" width="26" height="116" rx="9" fill="url(#gB)"/></g>' +
-    '<g stroke="#fff" stroke-width="3"><rect x="400" y="590" width="300" height="38" rx="16" fill="url(#gB)"/><g fill="url(#gm)"><rect x="450" y="628" width="14" height="46" rx="4"/><rect x="636" y="628" width="14" height="46" rx="4"/><rect x="430" y="672" width="56" height="10" rx="5"/><rect x="614" y="672" width="56" height="10" rx="5"/></g></g>' +
-    '<g transform="translate(130 620)" stroke="#fff" stroke-width="4"><circle r="110" fill="url(#gR)"/><circle r="84" fill="none" stroke="#fff" stroke-opacity=".6"/><circle r="22" fill="#fff7f7"/></g>' +
-    '<g transform="translate(285 650)" stroke="#fff" stroke-width="4"><circle r="72" fill="url(#gY)"/><circle r="52" fill="none" stroke="#fff" stroke-opacity=".6"/><circle r="15" fill="#fffbeb"/></g>' +
-    '<g transform="translate(395 668)" stroke="#fff" stroke-width="3"><circle r="38" fill="url(#gG)"/><circle r="12" fill="#f0fdf4"/></g>' +
-    '<g transform="translate(1100 560)" stroke="#fff" stroke-width="3"><path d="M-50 50a50 50 0 0 1 100 0v28a50 50 0 0 1-100 0z" fill="url(#gP)"/><path d="M-32 36c-24-64 64-64 64 0" fill="none" stroke="#c4b5fd" stroke-width="18" stroke-linecap="round"/></g>' +
-    '</svg>';
-var EYE = '<svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>';
-var FEAT =
-    '<span><svg viewBox="0 0 24 24"><path d="M6 7v10M18 7v10M3 10v4M21 10v4M6 12h12"/></svg>Workout logs</span>' +
-    '<span><svg viewBox="0 0 24 24"><path d="M12 3c1 4 5 6 5 11a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-4-1-6 1-10z"/></svg>Diet tracking</span>' +
-    '<span><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg>AI coach chat</span>' +
-    '<span><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-9"/></svg>Progress</span>';
-var HERO =
-    '<div class="fxhero"><span class="fxeyebrow">Strength &middot; Cardio &middot; Recovery</span>' +
-    '<h2>Build<br>a stronger<br><em>you.</em></h2>' +
-    '<p>Your workouts, meals and check-ins, together in one place.</p>' +
-    '<div class="fxfeat">' + FEAT + '</div></div>';
+var MARK='<svg viewBox="0 0 48 48" aria-hidden="true"><rect x="2" y="18" width="5" height="12" rx="2"/><rect x="8" y="12" width="6" height="24" rx="2.5"/><rect x="34" y="12" width="6" height="24" rx="2.5"/><rect x="41" y="18" width="5" height="12" rx="2"/><rect x="14" y="22" width="20" height="4" rx="2"/></svg>';
+var PILLS='<span><svg viewBox="0 0 24 24"><path d="M6 7v10M18 7v10M3 10v4M21 10v4M6 12h12"/></svg>Workouts</span><span><svg viewBox="0 0 24 24"><path d="M12 3c1 4 5 6 5 11a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-4-1-6 1-10z"/></svg>Nutrition</span><span><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-9"/></svg>Progress</span>';
+var GYM='<svg class="gymbg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="gm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#a5b4fc"/></linearGradient><linearGradient id="gB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bae6fd"/><stop offset="1" stop-color="#3b82f6"/></linearGradient><linearGradient id="gR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fecdd3"/><stop offset="1" stop-color="#f43f5e"/></linearGradient><linearGradient id="gY" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fef08a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient><linearGradient id="gG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bbf7d0"/><stop offset="1" stop-color="#22c55e"/></linearGradient><linearGradient id="gP" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9d5ff"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient><linearGradient id="gf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#c7d2fe" stop-opacity=".85"/></linearGradient><linearGradient id="gs" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".6"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs><g fill="url(#gs)"><path d="M-100 120L400 0h120L20 240z"/><path d="M200 420L760 220h110L330 520z"/><path d="M700 800L1100 560h120L820 860z"/></g><g opacity=".55"><circle cx="560" cy="120" r="46" fill="#fda4af"/><circle cx="640" cy="60" r="22" fill="#fde68a"/><circle cx="470" cy="210" r="18" fill="#86efac"/><circle cx="760" cy="150" r="30" fill="#c4b5fd"/><circle cx="380" cy="80" r="26" fill="#7dd3fc"/><circle cx="1130" cy="420" r="34" fill="#fdba74"/><circle cx="90" cy="460" r="30" fill="#f9a8d4"/></g><rect y="600" width="1200" height="200" fill="url(#gf)"/><path d="M0 668h1200" stroke="#fff" stroke-width="3" opacity=".85"/><g stroke="#fff" stroke-width="3"><g fill="url(#gm)"><rect x="840" y="130" width="22" height="540" rx="6"/><rect x="1060" y="130" width="22" height="540" rx="6"/><rect x="830" y="120" width="262" height="22" rx="8"/><rect x="862" y="300" width="36" height="12" rx="5"/><rect x="1024" y="300" width="36" height="12" rx="5"/><rect x="862" y="470" width="36" height="12" rx="5"/><rect x="1024" y="470" width="36" height="12" rx="5"/><rect x="760" y="287" width="440" height="12" rx="6"/></g><rect x="778" y="240" width="20" height="106" rx="8" fill="url(#gR)"/><rect x="802" y="256" width="16" height="74" rx="6" fill="url(#gY)"/><rect x="1162" y="240" width="20" height="106" rx="8" fill="url(#gB)"/><rect x="1142" y="256" width="16" height="74" rx="6" fill="url(#gG)"/></g><g transform="translate(60 180) rotate(-16)" stroke="#fff" stroke-width="3"><rect y="24" width="280" height="14" rx="7" fill="url(#gm)"/><rect x="-8" y="-12" width="40" height="84" rx="12" fill="url(#gP)"/><rect x="248" y="-12" width="40" height="84" rx="12" fill="url(#gP)"/><rect x="30" y="-28" width="26" height="116" rx="9" fill="url(#gB)"/><rect x="224" y="-28" width="26" height="116" rx="9" fill="url(#gB)"/></g><g stroke="#fff" stroke-width="3"><rect x="400" y="590" width="300" height="38" rx="16" fill="url(#gB)"/><g fill="url(#gm)"><rect x="450" y="628" width="14" height="46" rx="4"/><rect x="636" y="628" width="14" height="46" rx="4"/><rect x="430" y="672" width="56" height="10" rx="5"/><rect x="614" y="672" width="56" height="10" rx="5"/></g></g><g transform="translate(130 620)" stroke="#fff" stroke-width="4"><circle r="110" fill="url(#gR)"/><circle r="84" fill="none" stroke="#fff" stroke-opacity=".6"/><circle r="22" fill="#fff7f7"/></g><g transform="translate(285 650)" stroke="#fff" stroke-width="4"><circle r="72" fill="url(#gY)"/><circle r="52" fill="none" stroke="#fff" stroke-opacity=".6"/><circle r="15" fill="#fffbeb"/></g><g transform="translate(395 668)" stroke="#fff" stroke-width="3"><circle r="38" fill="url(#gG)"/><circle r="12" fill="#f0fdf4"/></g><g transform="translate(1100 560)" stroke="#fff" stroke-width="3"><path d="M-50 50a50 50 0 0 1 100 0v28a50 50 0 0 1-100 0z" fill="url(#gP)"/><path d="M-32 36c-24-64 64-64 64 0" fill="none" stroke="#c4b5fd" stroke-width="18" stroke-linecap="round"/></g></svg>';
+var EYE='<svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>';
+var FEAT='<span><svg viewBox="0 0 24 24"><path d="M6 7v10M18 7v10M3 10v4M21 10v4M6 12h12"/></svg>Workout logs</span><span><svg viewBox="0 0 24 24"><path d="M12 3c1 4 5 6 5 11a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-4-1-6 1-10z"/></svg>Diet tracking</span><span><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg>AI coach chat</span><span><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-9"/></svg>Progress</span>';
+var HERO='<div class="fxhero"><span class="fxeyebrow">Strength &middot; Cardio &middot; Recovery</span><h2>Build<br>a stronger<br><em>you.</em></h2><p>Your workouts, meals and check-ins, together in one place.</p><div class="fxfeat">'+FEAT+'</div></div>';
 
 let LM="login";
 const PW=(id,ac)=>`<span class="fxpw"><input id="${id}" type="password" autocomplete="${ac}"><button type="button" class="fxeye" data-eye="${id}" aria-label="Show password">${EYE}</button></span>`;
@@ -709,7 +710,6 @@ if(LM==="register"){const em=val("ae"),code=val("ac"),nm=val("an");if(nm.length<
 bt.disabled=true;enter(await api("POST","/auth/register",{name:nm,username:u1,email:em,password:pw,code:code||undefined,consent:code?$("acons").checked:undefined}));toast("Welcome to Fit Connect");return}
 bt.disabled=true;enter(await api("POST","/auth/login",{username:u1,password:pw}));toast("Welcome back")
 }catch(x){er.textContent=x.message;if(bt)bt.disabled=false}});
-// Device water reminders: works while this page is open.
 let waterReminderTimer = null;
 function sendWaterReminder(){
   const message = "Time to drink some water. Take a few sips and stay hydrated!";
@@ -748,5 +748,4 @@ if (localStorage.getItem("fitconnect_water_reminders") === "on" &&
   startWaterReminderTimer();
 }
 (async()=>{try{enter(await api("GET","/me"))}catch(e){showLogin()}})();
-
 </script></body></html>
